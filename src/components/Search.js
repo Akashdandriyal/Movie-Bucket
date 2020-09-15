@@ -16,11 +16,13 @@ const Search = (props) => {
     return (
         <form className = "search">
             <input 
+                className = "form-control"
                 value = {searchValue}
                 onChange = {handleSearchInputChanges}
                 type = "text"
             />
             <input 
+                className = "btn btn-dark"
                 onClick = {callSearchFunction}
                 type = "submit"
                 value = "SEARCH"

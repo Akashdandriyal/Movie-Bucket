@@ -4,7 +4,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,8 +42,13 @@
 }
 
 .movie {
+  height: 100%;
   padding: 5px 25px 10px 25px;
   max-width: 25%;
+}
+
+.movie h2 {
+  font-size: 1rem;
 }
 
 .errorMessage {
@@ -61,23 +66,28 @@
   margin-top: 10px;
 }
 
+.form-control {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid;
+  border-radius: 0;
+}
 
-input[type="submit"] {
+.form-control:focus {
+  box-shadow: none;
+  border-color: coral;
+}
+
+.btn {
   padding: 5px;
   background-color: transparent;
   color: black;
   border: 1px solid black;
   width: 80px;
-  margin-left: 5px;
+  margin-left: 15px;
   cursor: pointer;
 }
-
-
-input[type="submit"]:hover {
-  background-color: #282c34;
-  color: antiquewhite;
-}
-
 
 .search > input[type="text"]{
   width: 40%;
